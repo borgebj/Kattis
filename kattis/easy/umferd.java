@@ -17,7 +17,6 @@ public class umferd {
 			for (int i=0; i < n; i++) {
 				String line = scanner.nextLine();
 				count += line.chars().filter(c -> c == '.').count();
-
 			}
 			System.out.println(count / (m * n));
 		}

@@ -2,7 +2,7 @@ package easy;
 
 import java.util.Scanner;
 
-public class Autori {
+public class autori {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String [] words = scanner.next().split("-");

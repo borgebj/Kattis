@@ -2,7 +2,7 @@ package easy;
 
 import java.util.Scanner;
 
-public class QuadrantSelection {
+public class quadrant {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();

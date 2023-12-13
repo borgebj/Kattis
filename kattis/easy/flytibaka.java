@@ -1,3 +1,4 @@
+package easy;
 
 public class flytibaka {
 	public static void main(String[] args) {
