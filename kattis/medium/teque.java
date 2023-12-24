@@ -35,15 +35,11 @@ public class teque {
 				String call = action[0];
 				int arg = Integer.parseInt(action[1]);
 
-				switch (call){
-					case "push_front":
-						teque.push_front(arg); break;
-					case "push_back":
-						teque.push_back(arg); break;
-					case "push_middle":
-						teque.push_middle(arg); break;
-					case "get":
-						System.out.println(teque.get(arg)); break;
+				switch (call) {
+					case "push_front" -> teque.push_front(arg);
+					case "push_back" -> teque.push_back(arg);
+					case "push_middle" -> teque.push_middle(arg);
+					case "get" -> System.out.println(teque.get(arg));
 				}
 			}
 		}
