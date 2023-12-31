@@ -18,8 +18,8 @@ double calcAvg(vector<int>& grades, int students) {
     return (students == 0) ? 0 : total / students;
 }
 
-double calcAboveAvg(vector<int>& grades, double avg) {
-    double count = 0;
+int calcAboveAvg(const vector<int>& grades, double avg) {
+    int count = 0;
     for (int grade : grades)
         if (grade > avg) count++;
 
@@ -34,12 +34,16 @@ int main() {
         int students; cin >> students;
         vector<int> grades(students);
 
+        // calculates average of all inputs on current line
         double avGrade = calcAvg(grades, students);
 
+        // counts how many are above average
         double aboveAverageCount = calcAboveAvg(grades, avGrade);
 
+        // calculates the percentage of students above
         double percentAbove = (aboveAverageCount / students) * 100;
 
+        // print with 3-decimals
         cout << fixed << setprecision(3) << percentAbove << "%" << endl;
 
     }
