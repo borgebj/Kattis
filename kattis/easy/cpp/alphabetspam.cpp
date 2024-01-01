@@ -14,8 +14,8 @@ int main() {
     // for-each basert iterering
     for (auto &c : line) {
         if (c == '_') space++;
-        else if (c>='a' && c<='z') lower++;
-        else if (c>='A' && c<='Z') upper++;
+        else if (c>='a' && c<='z') lower++; // lowercase check
+        else if (c>='A' && c<='Z') upper++; // uppercase check
         else symbol++;
     }
 
