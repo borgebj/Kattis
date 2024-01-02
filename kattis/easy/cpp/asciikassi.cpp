@@ -27,8 +27,6 @@ int main() {
         }
         box += "\n";
     }
-
     cout << box;
-
     return 0;
 }
