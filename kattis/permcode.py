@@ -35,7 +35,7 @@ def decrypt(syms: list, perm: list, cipher: list, x: int):
     for j in range(n):
         if j == d: continue  # skips index same as d
         a = perm.index(cipher[j])
-        msg[j] =
+        #msg[j] =
 
     return "".join(msg)
 

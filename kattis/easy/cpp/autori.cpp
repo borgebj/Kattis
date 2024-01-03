@@ -4,15 +4,20 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+using std::cin;
+using std::cout;
+using std::istringstream;
+using std::string;
+using std::getline;
+
 
 int main() {
-    std::string line;
-    std::getline(std::cin, line);
-    std::istringstream iss(line);
+    string line; getline(cin, line);
+    istringstream iss(line);
 
     // itererer over split string med for-loop
-    for (std::string word; std::getline(iss, word, '-');)
-        std::cout << word[0];
+    for (string word; getline(iss, word, '-');)
+        cout << word[0];
 
     return 0;
 }

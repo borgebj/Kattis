@@ -1,32 +1,32 @@
 import sys
 from collections import deque
-from numba import jit
+# from numba import jit
 
 class Teque:
     def __init__(self):
         self.front = deque()
         self.back = deque()
 
-    @jit(nopython=True)
+    # @jit(nopython=True)
     def push_front(self, x):
         self.front.appendleft(x)
         self.balance()
 
-    @jit(nopython=True)
+    # @jit(nopython=True)
     def push_back(self, x):
         self.back.append(x)
         self.balance()
 
-    @jit(nopython=True)
+    # @jit(nopython=True)
     def push_middle(self, x):
         self.front.append(x)
         self.balance()
 
-    @jit(nopython=True)
+    # @jit(nopython=True)
     def get(self, index):
         return self.front[index] if index < len(self.front) else self.back[index - len(self.front)]
 
-    @jit(nopython=True)
+    # @jit(nopython=True)
     def balance(self):
         while len(self.front) > len(self.back) + 1:
             self.back.appendleft(self.front.pop())
