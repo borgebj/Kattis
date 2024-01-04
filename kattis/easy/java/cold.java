@@ -2,7 +2,7 @@ package easy;
 
 import java.util.*;
 
-public class ColdPuterScience {
+public class cold {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int days = scanner.nextInt();
