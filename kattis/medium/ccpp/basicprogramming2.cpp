@@ -6,7 +6,6 @@
 #include <vector>
 #include <unordered_set>
 #include <algorithm>
-#include <unordered_map>
 
 std::string doOne(const std::vector<signed int> &a) {
     std::unordered_set<signed int> seen;
