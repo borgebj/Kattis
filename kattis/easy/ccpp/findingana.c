@@ -11,7 +11,7 @@ int main() {
     // pointer to first occurrence
     char *occ = strchr(line, 'a');
 
-//     prints string from first occurrence (until null terminator)
+    // prints string from pointer (until null terminator)
     while (*occ != '\0') {
         printf("%c", *occ++);
     }
