@@ -2,3 +2,4 @@
 .class
 cmake-build-debug
 *.exe
+out
